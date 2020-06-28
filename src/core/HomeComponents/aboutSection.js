@@ -9,7 +9,7 @@ export default function aboutSection() {
       <div className="about-block">
         <div className="about-info">
           <span>About Us</span>
-          <h3>Empowering individuals </h3>
+          <h3 className="big-text">Empowering individuals </h3>
           <p>
             Efficiently unleash cross-media tour function information without
             cross action media value. Quickly maximize timely deliverables for

@@ -14,7 +14,9 @@ export default function Header() {
             <li>Portfolio</li>
             <li>
               <div className="pages">
-                <div tabIndex="1">Pages &#8690;</div>
+                <div tabIndex="1">
+                  Pages <i className="fas fa-chevron-down fa-xs"></i>
+                </div>
                 <ul>
                   <li>Portfolio details</li>
                   <li>about</li>
@@ -24,7 +26,9 @@ export default function Header() {
             </li>
             <li>
               <div className="blog">
-                <div tabIndex="1">Blog &#8690;</div>
+                <div tabIndex="1">
+                  Blog <i className="fas fa-chevron-down fa-xs"></i>
+                </div>
                 <ul>
                   <li>simple blog</li>
                   <li>blog</li>
