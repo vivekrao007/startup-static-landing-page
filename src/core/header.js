@@ -14,7 +14,7 @@ export default function Header() {
             <li>Portfolio</li>
             <li>
               <div className="pages">
-                <div tabindex="1">Pages &#8690;</div>
+                <div tabIndex="1">Pages &#8690;</div>
                 <ul>
                   <li>Portfolio details</li>
                   <li>about</li>
@@ -24,7 +24,7 @@ export default function Header() {
             </li>
             <li>
               <div className="blog">
-                <div tabindex="1">Blog &#8690;</div>
+                <div tabIndex="1">Blog &#8690;</div>
                 <ul>
                   <li>simple blog</li>
                   <li>blog</li>

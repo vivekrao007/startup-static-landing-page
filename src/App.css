@@ -1,6 +1,10 @@
+:root {
+  --purple: #6f42c1;
+  --background: #1f1f1f;
+}
 /* code for header and navigation */
 .header {
-  background-color: #1f1f1f;
+  background-color: var(--background);
   box-shadow: 0px 0px 30px rgba(34, 6, 6, 0.3);
   position: sticky;
   top: 0px;
@@ -13,7 +17,7 @@
   width: 80%;
   margin: auto;
   background-color: #fff;
-  background-color: #1f1f1f;
+  background-color: var(--background);
   color: white;
 }
 .nav-list {
@@ -75,13 +79,13 @@
 /* code for footer */
 .footer {
   width: 100%;
-  background-color: #1f1f1f;
+  background-color: var(--background);
   color: white;
 }
 .footer-container {
   padding-top: 100px;
   padding-bottom: 150px;
-  background-color: #1f1f1f;
+  background-color: var(--background);
   color: white;
   width: 60% !important;
   margin: auto;
@@ -111,24 +115,35 @@
 
 /* base components */
 .container {
-  width: 90%;
-  margin: auto;
-  height: 70vh;
 }
 
 /* Home page css */
-
+/* service section */
 .service-section {
+  width: 90%;
+  margin: auto;
+  height: 70vh;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 200px;
+  margin-top: 100px;
 }
-
+.service-section .title {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .service-section h2 {
-  width: 30%;
+  width: 40%;
   margin: auto;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
 }
 
 .service-section .cards {
@@ -142,6 +157,75 @@
 
 .card {
   width: 20%;
-  border: 1px solid gray;
+  border: 2px solid #e8e8e8;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.card:hover {
+  border-color: var(--purple);
+}
+/* about section css */
+.about-section {
+  display: flex;
+  flex-direction: row;
+  height: 78vh;
+  margin-bottom: 20px;
+}
+.about-block {
+  background-color: var(--background);
+  color: #ffffff;
+  width: 50%;
+  height: 100%;
+  margin-left: 8px;
+}
+.about-img {
+  max-width: 50%;
+  display: block;
+}
+.about-img img {
+  height: 100%;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 45%;
+  min-height: 70vh;
+  margin-left: 10%;
+}
+.about-info h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.about-info p {
+  color: #c9c9c9;
+}
+.about-info .font-highlight {
+  font-size: 18px;
+  font-weight: 400;
+}
+.about-btn {
+  background-color: #615cfd;
+  color: #fff;
+  padding: 15px 33px;
+  margin-top: 10px;
+  border-radius: 30px;
+  outline: 0;
+  font-size: 16px;
+}
+.about-btn:focus {
+  outline: 0;
+}
+/* misc */
+
+.text-purple {
+  color: var(--purple);
+  font-weight: 500;
+  text-transform: capitalize;
 }
