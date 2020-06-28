@@ -5,7 +5,7 @@ export default function Header() {
     <header className="header">
       <nav className="nav-bar">
         <div className="brand">
-          <h2>Startup</h2>
+          <img src="/asserts/images/logo/logo.png" alt="logo" />
         </div>
         <div className="list-items nav-list">
           <ul>

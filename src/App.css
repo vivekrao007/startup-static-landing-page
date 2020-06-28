@@ -1,4 +1,5 @@
 :root {
+  --light-purple: #615cfd;
   --purple: #6f42c1;
   --background: #1f1f1f;
 }
@@ -19,6 +20,7 @@
   background-color: #fff;
   background-color: var(--background);
   color: white;
+  height: 100px;
 }
 .nav-list {
   width: 60%;
@@ -196,7 +198,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 45%;
+  width: 60%;
   min-height: 70vh;
   margin-left: 10%;
 }
@@ -208,16 +210,22 @@
   font-weight: 400;
 }
 .about-btn {
-  background-color: #615cfd;
+  background-color: var(--light-purple);
   color: #fff;
   padding: 15px 33px;
   margin-top: 10px;
   border-radius: 30px;
   outline: 0;
   font-size: 16px;
+  cursor: pointer;
 }
 .about-btn:focus {
   outline: 0;
+}
+.about-btn:hover {
+  background: transparent;
+  color: var(--light-purple);
+  border: 1px solid var(--light-purple);
 }
 
 /* featured section */
@@ -257,20 +265,20 @@
   width: 50%;
 }
 .work-info {
-  padding-top: 150px;
+  padding-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
   margin-left: 40%;
-  width: 40%;
+  width: 50%;
 }
 .watch-video {
   margin-top: 50px;
 }
 .watch-video-btn {
   padding: 20px;
-  background-color: #615cfd;
+  background-color: var(--light-purple);
   border-radius: 50%;
   display: inline;
   margin-right: 20px;
@@ -278,6 +286,74 @@
 }
 .watch-video-btn i {
   color: white;
+}
+/* team section css */
+.team-section {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.team-section > p {
+  width: 25%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.team-group {
+  display: flex;
+  flex-direction: row;
+}
+.team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.team-member h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.team-member p {
+  margin-top: 10px;
+}
+/* contact sections css */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+  text-align: center;
+  padding-bottom: 150px;
+}
+.input-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: auto;
+  width: 40%;
+}
+.input-group .input-field {
+  border: 1px solid #c9c9c9;
+  height: 50px;
+  border-radius: 30px;
+  display: block;
+  padding-left: 20px;
+  /* width: 350px; */
+}
+.input-group .input-field:focus {
+  outline: 0;
+}
+.full-block {
+  grid-column: 1/4;
+  margin-right: 12px;
+}
+.pt-20 {
+  padding-top: 20px;
 }
 /* misc */
 
@@ -294,4 +370,20 @@
 
 .text-muted {
   color: #727272;
+}
+
+.primary-btn {
+  background-color: var(--light-purple);
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 15px 33px;
+}
+.primary-btn:focus {
+  outline: 0;
+}
+.primary-btn:hover {
+  background: transparent;
+  color: var(--light-purple);
+  border: 1px solid var(--light-purple);
 }

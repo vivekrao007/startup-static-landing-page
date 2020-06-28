@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="list-items nav-list">
           <ul>
             <li>
-              <h2>Startup</h2>
+              <img src="/asserts/images/logo/logo.png" alt="logo" />
             </li>
             <li>Home</li>
             <li>Service</li>

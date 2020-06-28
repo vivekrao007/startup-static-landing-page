@@ -18,7 +18,7 @@ export default function aboutSection() {
           <p className="font-highlight">
             “Function information without cross action media value."
           </p>
-          <button className="about-btn">About Us</button>
+          <span className="about-btn">About Us</span>
         </div>
       </div>
     </section>
