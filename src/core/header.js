@@ -39,7 +39,7 @@ export default function Header() {
           </ul>
         </div>
         <div className="nav-text">
-          <a>Say hello</a>
+          <div className="hello-text">Say hello</div>
         </div>
       </nav>
     </header>
