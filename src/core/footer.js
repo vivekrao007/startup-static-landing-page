@@ -9,12 +9,12 @@ export default function Footer() {
             <li>
               <img src="/asserts/images/logo/logo.png" alt="logo" />
             </li>
-            <li>Home</li>
-            <li>Service</li>
-            <li>Portfolio</li>
-            <li>Pages</li>
-            <li>Blog</li>
-            <li>contact</li>
+            <li className="over-background">About</li>
+            <li className="over-background">Service</li>
+            <li className="over-background">Portfolio</li>
+            <li className="over-background">Pages</li>
+            <li className="over-background">Blog</li>
+            <li className="over-background">contact</li>
           </ul>
         </div>
         <div className="list-items">

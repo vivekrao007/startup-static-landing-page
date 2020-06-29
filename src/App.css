@@ -120,6 +120,9 @@
   text-align: center;
   padding-bottom: 50px;
 }
+.over-background:hover {
+  color: var(--purple);
+}
 /* banner section css */
 .home-banner {
   width: 100%;
